@@ -1,75 +1,70 @@
-# ⛳ Golf Charity Platform | Digital Heroes Hackathon
+# ⛳ Golf Charity Platform
 
-### **Play for More Than Par.**
-A high-performance, real-time tournament tracking platform designed to gamify and streamline charity golf events. Built with a focus on high-contrast "Noir" aesthetics and precision handicap calculations.
-
----
-
-## 🚀 Live Demo
-**View the Project:** [https://golf-charity-platform-eta-ten.vercel.app/](https://golf-charity-platform-eta-ten.vercel.app/)
+### **Precision Tracking. High-Contrast Design.**
+A specialized web application built to manage and track scores for charity golf events. This platform prioritizes real-time data accuracy and a mobile-first "Noir" aesthetic for high visibility on the course.
 
 ---
 
-## 🛠️ The Tech Stack
-* **Framework:** [Next.js 14+](https://nextjs.org/) (App Router)
-* **Database & Auth:** [Supabase](https://supabase.com/) (PostgreSQL + GoTrue)
-* **Styling:** [Tailwind CSS](https://tailwindcss.com/) (Custom "Noir" Dark Theme)
-* **Deployment:** [Vercel](https://vercel.com/)
+## 🚀 Live Application
+**URL:** [https://golf-charity-platform-eta-ten.vercel.app/](https://golf-charity-platform-eta-ten.vercel.app/)
+
+---
+
+## 🛠️ Technology Stack
+* **Frontend:** [Next.js 14+](https://nextjs.org/) (App Router)
+* **Backend & Database:** [Supabase](https://supabase.com/) (PostgreSQL)
+* **Authentication:** [Supabase Auth](https://supabase.com/auth)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
 * **Icons:** [Lucide React](https://lucide.dev/)
+* **Deployment:** [Vercel](https://vercel.com/)
 
 ---
 
-## ✨ Key Features
+## ✨ Core Features
 
-### 📉 Custom "Rolling 5" Logic
-Unlike standard static leaderboards, this platform implements a **Rolling 5 Handicap System**. 
-* The system automatically tracks a player's entire history but only calculates their current standing based on their **last 5 recorded scores**.
-* Ensures that current form is prioritized over historical data, keeping the competition fair and dynamic.
+### 📊 Rolling 5 Handicap Algorithm
+The platform features a custom-built scoring engine that calculates a player's current standing based on a **Rolling 5** logic. 
+* Tracks full historical performance.
+* Dynamically filters the 5 most recent entries for the active leaderboard calculation.
+* Ensures fair play by reflecting a player's current form.
 
-### 🌑 Noir Dashboard
-A high-contrast, professional-grade interface designed for outdoor visibility on golf courses. 
-* **Minimalist UI:** Focuses on essential data points (Score, Date, Relation to Par).
-* **Real-time Updates:** Powered by Supabase subscriptions to reflect leaderboard changes instantly.
+### 🌑 "Noir" Dashboard
+Designed for outdoor utility, the dashboard uses a high-contrast dark theme to ensure readability in bright sunlight on the golf course. 
+* **Real-Time Sync:** Uses Supabase Realtime to push score updates to the leaderboard without page refreshes.
+* **Responsive Design:** Fully optimized for mobile devices.
 
-### 🛡️ Secure Authentication
-* Fully integrated Supabase Auth for player profiles.
-* Protected routes to ensure only verified players can submit and edit their scores.
+### 🔒 Player Management
+* Secure login and registration.
+* Protected API routes to ensure players can only modify their own score data.
 
 ---
 
-## 🏗️ Installation & Local Setup
+## 🏗️ Local Development
 
-1.  **Clone the repository:**
+1.  **Clone the Repo:**
     ```bash
     git clone [https://github.com/mahimasisodiya049-blip/Golf-Charity-Platform.git](https://github.com/mahimasisodiya049-blip/Golf-Charity-Platform.git)
     cd Golf-Charity-Platform
     ```
 
-2.  **Install dependencies:**
+2.  **Install Packages:**
     ```bash
     npm install
     ```
 
-3.  **Configure Environment Variables:**
-    Create a `.env.local` file and add your Supabase credentials:
+3.  **Environment Variables:**
+    Create a `.env.local` file with your Supabase keys:
     ```env
-    NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-    NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+    NEXT_PUBLIC_SUPABASE_URL=your_url
+    NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key
     ```
 
-4.  **Run the development server:**
+4.  **Start Dev Server:**
     ```bash
     npm run dev
     ```
 
 ---
 
-## 📅 Submission Details
-* **Hackathon:** Digital Heroes 2026
-* **Submission Date:** March 24, 2026
-* **Developer:** Mahima Sisodiya
-
----
-
-## 📜 License
-This project is open-source and available under the MIT License.
+## 👤 Author
+**Mahima Sisodiya** *Specializing in AI/ML & Full-Stack Development*
